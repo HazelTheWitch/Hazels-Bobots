@@ -55,7 +55,6 @@ public class BobotBlock extends Block implements BlockEntityProvider {
 
     @Override
     public BlockEntity createBlockEntity(BlockView world) {
-        // TODO Auto-generated method stub
-        return null;
+        return new BobotBlockEntity();
     }
 }
