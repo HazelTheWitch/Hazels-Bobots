@@ -81,10 +81,11 @@ public class BobotBlock extends BlockWithEntity {
         if (!world.isClient) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
             if (blockEntity instanceof BobotBlockEntity) {
-                
+                player.openHandledScreen(state.createScreenHandlerFactory(world, pos));
+                return ActionResult.SUCCESS;
             }
         }
 
-        return null;
+        return ActionResult.PASS;
     }
 }

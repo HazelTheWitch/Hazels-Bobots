@@ -7,6 +7,7 @@ import net.minecraft.block.entity.LootableContainerBlockEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Tickable;
@@ -18,7 +19,7 @@ public class BobotBlockEntity extends LootableContainerBlockEntity implements HS
     public BobotBlockEntity() {
         super(BobotBlocks.BOBOT_BLOCK_ENTITY);
 
-        items = DefaultedList.ofSize(23, ItemStack.EMPTY);
+        items = DefaultedList.ofSize(BobotScreenDescription.INVENTORY_SIZE, ItemStack.EMPTY);
     }
 
     @Override
@@ -48,7 +49,6 @@ public class BobotBlockEntity extends LootableContainerBlockEntity implements HS
 
     @Override
     protected ScreenHandler createScreenHandler(int syncId, PlayerInventory playerInventory) {
-        // TODO Auto-generated method stub
-        return null;
+        return new BobotScreenDescription(syncId, playerInventory, ScreenHandlerContext.create(world, pos));
     }
 }

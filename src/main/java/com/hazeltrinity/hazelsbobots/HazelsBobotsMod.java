@@ -31,6 +31,10 @@ public class HazelsBobotsMod implements ModInitializer {
         new Identifier(MOD_ID, "bobots"))
         .icon(() -> new ItemStack(BobotBlocks.BOBOT))
         .build();
+        
+    public static Identifier newId(String name) {
+        return new Identifier(MOD_ID, name);
+    }
 
     @Override
     public void onInitialize() {
