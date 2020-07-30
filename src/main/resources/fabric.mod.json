@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "hazelsbobots",
+  "version": "${version}",
+  "name": "HazelsBobots",
+  "description": "Visual programming based approach to automation.",
+  "authors": [
+    "HazelTrinity"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/hazelsbobots/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.hazeltrinity.hazelsbobots.HazelsBobotsMod"
+    ],
+    "client": [
+      "com.hazeltrinity.hazelsbobots.HazelsBobotsClient"
+    ],
+    "server": ["com.hazeltrinity.hazelsbobots.HazelsBobotsServer"]
+  },
+  "mixins": [
+    "hazelsbobots.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.9.0",
+    "fabric": "*"
+  }
+}

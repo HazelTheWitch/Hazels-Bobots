@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "hazelsbobots:block/bobot"
+        },
+        "facing=east": {
+            "model": "hazelsbobots:block/bobot", "y": 90
+        },
+        "facing=south": {
+            "model": "hazelsbobots:block/bobot", "y": 180
+        },
+        "facing=west": {
+            "model": "hazelsbobots:block/bobot", "y": 270
+        }
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "eye": "hazelsbobots:block/bobot/eye",
+        "bobot_top": "hazelsbobots:block/bobot/bobot_top",
+        "bobot_side_east": "hazelsbobots:block/bobot/bobot_side_east",
+        "bobot_back": "hazelsbobots:block/bobot/bobot_back",
+        "bobot_bottom": "hazelsbobots:block/bobot/bobot_bottom",
+        "bobot_side_west": "hazelsbobots:block/bobot/bobot_side_west",
+        "bobot_front": "hazelsbobots:block/bobot/bobot_front",
+        "particle": "hazelsbobots:block/bobot/bobot_side_east"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Body",
+            "from": [ 1, 1, 1 ], 
+            "to": [ 15, 15, 15 ], 
+            "faces": {
+                "north": { "texture": "#bobot_front", "uv": [ 1, 1, 15, 15 ] },
+                "east": { "texture": "#bobot_side_east", "uv": [ 1, 1, 15, 15 ] },
+                "south": { "texture": "#bobot_back", "uv": [ 1, 1, 15, 15 ] },
+                "west": { "texture": "#bobot_side_west", "uv": [ 1, 1, 15, 15 ] },
+                "up": { "texture": "#bobot_top", "uv": [ 1, 1, 15, 15 ] },
+                "down": { "texture": "#bobot_bottom", "uv": [ 1, 1, 15, 15 ] }
+            }
+        },
+        {
+            "name": "Left Arm",
+            "from": [ 0, 8, 4 ], 
+            "to": [ 1, 10, 9 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#bobot_top", "uv": [ 1, 1, 2, 3 ] },
+                "east": { "texture": "#bobot_top", "uv": [ 1, 1, 6, 3 ] },
+                "south": { "texture": "#bobot_top", "uv": [ 1, 1, 2, 3 ] },
+                "west": { "texture": "#bobot_top", "uv": [ 1, 1, 6, 3 ] },
+                "up": { "texture": "#bobot_top", "uv": [ 1, 1, 2, 6 ] },
+                "down": { "texture": "#bobot_top", "uv": [ 1, 1, 2, 6 ] }
+            }
+        },
+        {
+            "name": "Right Arm",
+            "from": [ 15, 8, 4 ], 
+            "to": [ 16, 10, 9 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#bobot_top", "uv": [ 1, 1, 2, 3 ] },
+                "east": { "texture": "#bobot_top", "uv": [ 1, 1, 6, 3 ] },
+                "south": { "texture": "#bobot_top", "uv": [ 1, 1, 2, 3 ] },
+                "west": { "texture": "#bobot_top", "uv": [ 1, 1, 6, 3 ] },
+                "up": { "texture": "#bobot_top", "uv": [ 1, 1, 2, 6 ] },
+                "down": { "texture": "#bobot_top", "uv": [ 1, 1, 2, 6 ] }
+            }
+        },
+        {
+            "name": "Left Eye",
+            "from": [ 5, 10, 0 ], 
+            "to": [ 7, 12, 1 ], 
+            "faces": {
+                "north": { "texture": "#eye", "uv": [ 0, 0, 2, 2 ] },
+                "east": { "texture": "#eye", "uv": [ 0, 0, 1, 2 ] },
+                "west": { "texture": "#eye", "uv": [ 0, 0, 1, 2 ] },
+                "up": { "texture": "#eye", "uv": [ 0, 0, 2, 1 ] },
+                "down": { "texture": "#eye", "uv": [ 0, 0, 2, 1 ] }
+            }
+        },
+        {
+            "name": "Right Eye",
+            "from": [ 9, 10, 0 ], 
+            "to": [ 11, 12, 1 ], 
+            "faces": {
+                "north": { "texture": "#eye", "uv": [ 0, 0, 2, 2 ] },
+                "east": { "texture": "#eye", "uv": [ 0, 0, 1, 2 ] },
+                "west": { "texture": "#eye", "uv": [ 0, 0, 1, 2 ] },
+                "up": { "texture": "#eye", "uv": [ 0, 0, 2, 1 ] },
+                "down": { "texture": "#eye", "uv": [ 0, 0, 2, 1 ] }
+            }
+        }
+    ]
+}
