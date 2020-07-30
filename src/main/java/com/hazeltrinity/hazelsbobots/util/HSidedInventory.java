@@ -23,6 +23,10 @@ public interface HSidedInventory extends SidedInventory {
         return getItems().size();
     }
 
+    default int size() {
+        return getSize();
+    }
+
     // Sided Inventory Overrides
     
     /**

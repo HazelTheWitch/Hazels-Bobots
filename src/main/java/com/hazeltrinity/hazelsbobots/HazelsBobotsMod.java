@@ -16,6 +16,7 @@ import net.minecraft.util.Identifier;
 public class HazelsBobotsMod implements ModInitializer {
 
     public static Logger LOGGER = LogManager.getLogger();
+    public static Level LOG_LEVEL = Level.INFO;
 
     public static final String MOD_ID = "hazelsbobots";
     public static final String MOD_NAME = "HazelsBobots";
@@ -44,6 +45,10 @@ public class HazelsBobotsMod implements ModInitializer {
 
     public static void log(Level level, String message){
         LOGGER.log(level, "[" + MOD_NAME + "] " + message);
+    }
+
+    public static void log(String message) {
+        log(LOG_LEVEL, message);
     }
 
 }

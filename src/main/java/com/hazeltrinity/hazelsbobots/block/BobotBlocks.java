@@ -17,6 +17,7 @@ import net.minecraft.util.registry.Registry;
 public class BobotBlocks implements Initialized {
     public static final Block BOBOT = new BobotBlock();
     public static BlockEntityType<BobotBlockEntity> BOBOT_BLOCK_ENTITY = BlockEntityType.Builder.create(BobotBlockEntity::new, BOBOT).build(null);
+    
 
     private void register(Block block, String name, BlockItem blockItem, BlockEntityType<?> blockEntity) {
         Identifier id = new Identifier(HazelsBobotsMod.MOD_ID, name);
